@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+
+#pretty-examples {
+	padding: 0;
+}
+
+#pretty-examples li {
+    display: inline-block;
+    text-align: center;
+}
+
+#pretty-examples li img {
+    display: block;
+}

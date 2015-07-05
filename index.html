@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style/main.css" rel="stylesheet">
+    <!-- See https://meddelare.github.io/meddelare-examples/examples/button/ for the rest of this example -->
+    <link href="examples/button/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="http://meddelare.com/">Meddelare</a></h1>
+        <p>
+            Install <strong>custom social share counters</strong> on your website with your <strong>own hosted solution</strong>, which only makes <strong>a single API request</strong> and loads <strong>minimal or zero assets</strong> to display the counters.
+        </p>
+        <p>
+            Check out <a href="http://meddelare.com/">meddelare.com</a>!
+        </p>
+        <p>
+            <!-- See https://meddelare.github.io/meddelare-examples/examples/button/ for the rest of this example -->
+            <div class="down sharecenter social-container" style="width: 248px">
+                <a data-count="0" href="https://twitter.com/intent/tweet?text=I+love+these+social+sharing+buttons!&amp;url=http://meddelare.com/&amp;via=meddelare&amp;related=neutralthoughts,joelpurra&amp;hashtags=javascript,UX,privacy,SMM" target="_blank" id="twitter" class="twitter-button social-count">
+                    <div id="stwit"></div>
+                </a>
+                <a data-count="0" href="https://www.facebook.com/share.php?u=http://meddelare.com/" id="facebook" target="_blank" class="social-count facebook-button">
+                    <div id="sfb"></div>
+                </a>
+                <a data-count="0" href="https://plus.google.com/share?url=http://meddelare.com/" id="googleplus" target="_blank" class="social-count google-button">
+                    <div id="sgplus"></div>
+                </a>
+            </div>
+        </p>
+    </header>
+    <main>
+        <h2>Examples</h2>
+        <p>
+            Basic examples
+        </p>
+        <ul>
+            <li>
+                <a href="https://meddelare-node-server.herokuapp.com/?networks=facebook,twitter,googleplus&amp;url=http://meddelare.com">JSON</a>
+            </li>
+            <li>
+                <a href="https://meddelare-node-server.herokuapp.com/?networks=facebook,twitter,googleplus&amp;url=http://meddelare.com&amp;callback=thisIsAnExample">JSONP</a>
+            </li>
+            <li>
+                <a href="examples/text/">Text</a> (<a href="https://github.com/meddelare/meddelare-examples/tree/master/examples/text">source</a>)
+            </li>
+        </ul>
+        <p>
+            Pretty examples
+        </p>
+        <ul id="pretty-examples">
+            <li>
+                <a href="examples/button/"><img src="examples/button/screenshot.png" /></a><a href="examples/button/">Button</a> (<a href="https://github.com/meddelare/meddelare-examples/tree/master/examples/button">source</a>)
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>
+            Copyright &copy; 2015 Team <a href="http://meddelare.com/">Meddelare</a> All rights reserved.
+        </p>
+        <p>
+            When using <a href="https://github.com/meddelare/meddelare-examples">meddelare-examples</a>, comply to the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+        </p>
+    </footer>
+    <!-- See https://meddelare.github.io/meddelare-examples/examples/button/ for the rest of this example -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>
+    $.ajax("https://d12cncu17l9pr5.cloudfront.net/?networks=facebook,twitter,googleplus&url=http://meddelare.com", {
+        success: function(res, err) {
+            $.each(res, function(network, value) {
+                $("#" + network).attr("data-count", value);
+            });
+        }
+    });
+    </script>
+</body>
+
+</html>
