@@ -4,10 +4,11 @@
 <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Open source, privacy aware social share buttons with counters! meddelare.com</title>
-    <link href="http://meddelare.com/resources/style/main.css" rel="stylesheet">
-    <link href="resources/style/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://meddelare.com/resources/font/font.css" />
+    <link rel="stylesheet" href="http://meddelare.com/resources/style/main.css">
+    <link rel="stylesheet" href="resources/style/main.css">
     <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
-    <link href="examples/button/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="examples/button/style.css">
     <link rel="icon" type="image/png" href="http://meddelare.com/resources/image/icon/icon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="http://meddelare.com/resources/image/icon/icon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="http://meddelare.com/resources/image/icon/icon-64x64.png" sizes="64x64" />
@@ -39,55 +40,49 @@
         <p>
             Install <strong>custom social share counters</strong> on your website with your <strong>own hosted solution</strong>, which only makes <strong>a single API request</strong> and loads <strong>minimal or zero assets</strong> to display the counters.
         </p>
-        <p>
-            Check out <a href="http://meddelare.com/">meddelare.com</a>!
-        </p>
-        <p>
-            <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
-            <div class="down sharecenter social-container" style="width: 248px">
-                <a data-count="0" href="https://twitter.com/intent/tweet?text=I+love+these+social+sharing+buttons!&amp;url=http://meddelare.com/&amp;via=meddelare&amp;related=neutralthoughts,joelpurra&amp;hashtags=javascript,UX,privacy,SMM" target="_blank" id="twitter" class="twitter-button social-count">
-                    <div id="stwit"></div>
-                </a>
-                <a data-count="0" href="https://www.facebook.com/share.php?u=http://meddelare.com/" id="facebook" target="_blank" class="social-count facebook-button">
-                    <div id="sfb"></div>
-                </a>
-                <a data-count="0" href="https://plus.google.com/share?url=http://meddelare.com/" id="googleplus" target="_blank" class="social-count google-button">
-                    <div id="sgplus"></div>
-                </a>
-            </div>
-        </p>
     </header>
+    <aside>
+        <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
+        <div class="down sharecenter social-container" style="width: 248px">
+            <a data-count="0" href="https://twitter.com/intent/tweet?text=I+love+these+social+sharing+buttons!&amp;url=http://meddelare.com/&amp;via=meddelare&amp;related=neutralthoughts,joelpurra&amp;hashtags=javascript,UX,privacy,SMM" target="_blank" id="twitter" class="twitter-button social-count">
+                <div id="stwit"></div>
+            </a>
+            <a data-count="0" href="https://www.facebook.com/share.php?u=http://meddelare.com/" id="facebook" target="_blank" class="social-count facebook-button">
+                <div id="sfb"></div>
+            </a>
+            <a data-count="0" href="https://plus.google.com/share?url=http://meddelare.com/" id="googleplus" target="_blank" class="social-count google-button">
+                <div id="sgplus"></div>
+            </a>
+        </div>
+    </aside>
     <main>
-        <h2>Examples</h2>
-        <p>
-            Basic examples
-        </p>
-        <ul>
-            <li>
-                <a href="https://meddelare-node-server.herokuapp.com/?networks=facebook,twitter,googleplus&amp;url=http://meddelare.com">JSON</a>
-            </li>
-            <li>
-                <a href="https://meddelare-node-server.herokuapp.com/?networks=facebook,twitter,googleplus&amp;url=http://meddelare.com&amp;callback=thisIsAnExample">JSONP</a>
-            </li>
-            <li>
-                <a href="examples/text/">Text</a> (<a href="https://github.com/meddelare/meddelare-examples/tree/gh-pages/examples/text">source</a>)
-            </li>
-        </ul>
-        <p>
-            Pretty examples
-        </p>
-        <ul id="pretty-examples">
-            <li>
-                <a href="examples/button/"><img src="examples/button/screenshot.png" /></a><a href="examples/button/">Button</a> (<a href="https://github.com/meddelare/meddelare-examples/tree/gh-pages/examples/button">source</a>)
-            </li>
-        </ul>
+        <article class="two columns">
+            <div class="left column">
+                <h2>Basic examples</h2>
+                <ul>
+                    <li>
+                        <a href="https://meddelare-node-server.herokuapp.com/?networks=facebook,twitter,googleplus&amp;url=http://meddelare.com">JSON</a>
+                    </li>
+                    <li>
+                        <a href="https://meddelare-node-server.herokuapp.com/?networks=facebook,twitter,googleplus&amp;url=http://meddelare.com&amp;callback=thisIsAnExample">JSONP</a>
+                    </li>
+                    <li>
+                        <a href="examples/text/">Text</a> (<a href="https://github.com/meddelare/meddelare-examples/tree/gh-pages/examples/text">source</a>)
+                    </li>
+                </ul>
+            </div>
+            <div class="right column">
+                <h2>Pretty examples</h2>
+                <ul id="pretty-examples">
+                    <li>
+                        <a href="examples/button/"><img src="examples/button/screenshot.png" /></a><a href="examples/button/">Button</a> (<a href="https://github.com/meddelare/meddelare-examples/tree/gh-pages/examples/button">source</a>)
+                    </li>
+                </ul>
+        </article>
     </main>
     <footer>
         <p>
-            Copyright &copy; 2015 Team <a href="http://meddelare.com/">Meddelare</a> All rights reserved.
-        </p>
-        <p>
-            When using <a href="https://github.com/meddelare/meddelare-examples">meddelare-examples</a>, comply to the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+            <img src="http://meddelare.com/resources/image/icon/icon-64x64.png" /> <a href="http://meddelare.com/">Meddelare</a> Copyright &copy; 2015 Team <a href="http://meddelare.com/">Meddelare</a> All rights reserved. <a href="https://github.com/meddelare">Released</a> under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
         </p>
     </footer>
     <!-- See http://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
