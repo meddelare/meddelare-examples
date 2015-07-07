@@ -5,6 +5,8 @@
 #pretty-examples li {
     display: inline-block;
     text-align: center;
+    border: 1px dashed grey;
+    padding: 1em;
 }
 
 #pretty-examples li img {
