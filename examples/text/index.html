@@ -10,7 +10,7 @@
     <span id="googleplus"></span>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script>
-    $.ajax("https://d12cncu17l9pr5.cloudfront.net/?networks=facebook,twitter,googleplus&url=http://meddelare.com", {
+    $.ajax("https://d12cncu17l9pr5.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://meddelare.com", {
         success: function(res, err) {
             $.each(res, function(network, value) {
                 $("#" + network).text(value);

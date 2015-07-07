@@ -1,11 +1,11 @@
-# [Meddelare](http://meddelare.com/) Social Buttons Examples [meddelare-examples](https://github.com/meddelare/meddelare-examples)
+# [Meddelare](https://meddelare.com/) Social Buttons Examples [meddelare-examples](https://github.com/meddelare/meddelare-examples)
 
 
 Install **custom social share counters** on your website with your **own hosted solution**, which only makes **a single API request** and loads **minimal or zero assets** to display the counters.
 
-[![A screenshot of the button example](https://cloud.githubusercontent.com/assets/1398544/8511166/5c92d0b2-230b-11e5-895a-d3b67da749b5.png)](http://meddelare.com/)
+[![A screenshot of the button example](https://cloud.githubusercontent.com/assets/1398544/8511166/5c92d0b2-230b-11e5-895a-d3b67da749b5.png)](https://meddelare.com/)
 
-Check out [meddelare.com](http://meddelare.com/) and view examples on [meddelare.com/meddelare-examples](http://meddelare.com/meddelare-examples).
+Check out [meddelare.com](https://meddelare.com/) and view examples on [meddelare.com/meddelare-examples](https://meddelare.com/meddelare-examples).
 
 
 
@@ -44,6 +44,6 @@ Many thanks goes out to [Taskforce](https://taskforce.is/) for their [social-but
 
 ---
 
-Copyright (c) 2015 Team Meddelare <http://meddelare.com/> All rights reserved.
+Copyright (c) 2015 Team Meddelare <https://meddelare.com/> All rights reserved.
 
 When using [meddelare-examples](https://github.com/meddelare/meddelare-examples), comply to the [MIT license](http://opensource.org/licenses/MIT).
