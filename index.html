@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://meddelare.com/resources/style/main.css">
     <link rel="stylesheet" href="resources/style/main.css">
     <!-- See https://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
-    <link rel="stylesheet" href="examples/button/style.css">
+    <link rel="stylesheet" href="examples/button/meddelare.css">
     <link rel="icon" type="image/png" href="https://meddelare.com/resources/image/icon/icon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="https://meddelare.com/resources/image/icon/icon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="https://meddelare.com/resources/image/icon/icon-64x64.png" sizes="64x64" />
@@ -52,15 +52,15 @@
     <aside>
         <div id="live-example-notice">Live demo!</div>
         <!-- See https://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
-        <div class="down sharecenter social-container" style="width: 248px">
-            <a data-count="0" href="https://twitter.com/intent/tweet?text=I+love+these+social+sharing+buttons!&amp;url=https://meddelare.com/&amp;via=meddelare&amp;related=neutralthoughts,joelpurra&amp;hashtags=javascript,UX,privacy,SMM" target="_blank" id="twitter" class="twitter-button social-count">
-                <div id="stwit"></div>
+        <div class="meddelare-container" data-meddelare-url="https://meddelare.com/">
+            <a href="https://twitter.com/home?status=https://meddelare.com/" target="_blank" class="meddelare-network" data-meddelare-network="twitter" data-count="0">
+                <span class="meddelare-icon"></span>
             </a>
-            <a data-count="0" href="https://www.facebook.com/share.php?u=https://meddelare.com/" id="facebook" target="_blank" class="social-count facebook-button">
-                <div id="sfb"></div>
+            <a href="https://www.facebook.com/share.php?u=https://meddelare.com/" target="_blank" class="meddelare-network" data-meddelare-network="facebook" data-count="0">
+                <span class="meddelare-icon"></span>
             </a>
-            <a data-count="0" href="https://plus.google.com/share?url=https://meddelare.com/" id="googleplus" target="_blank" class="social-count google-button">
-                <div id="sgplus"></div>
+            <a href="https://plus.google.com/share?url=https://meddelare.com/" target="_blank" class="meddelare-network" data-meddelare-network="googleplus" data-count="0">
+                <span class="meddelare-icon"></span>
             </a>
         </div>
     </aside>
@@ -107,15 +107,7 @@
     </footer>
     <!-- See https://meddelare.com/meddelare-examples/examples/button for the rest of this example -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script>
-    $.ajax("https://d12cncu17l9pr5.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://meddelare.com", {
-        success: function(res, err) {
-            $.each(res, function(network, value) {
-                $("#" + network).attr("data-count", value);
-            });
-        }
-    });
-    </script>
+    <script src="examples/button/meddelare.js"></script>
 </body>
 
 </html>

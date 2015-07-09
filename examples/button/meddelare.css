@@ -1,0 +1,73 @@
+.meddelare-container {
+    display: inline-block;
+    padding-top: 2em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-bottom: 1em;
+}
+
+.meddelare-container .meddelare-network {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    margin: 4px;
+}
+
+.meddelare-container .meddelare-network:after {
+    position: absolute;
+    z-index: 98;
+    top: -1.6em;
+    display: block;
+    width: 42px;
+    padding: 5px;
+    content: attr(data-count);
+    text-align: center;
+    white-space: nowrap;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    color: #444;
+}
+
+.meddelare-container .meddelare-network:before {
+    z-index: 97;
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    border: solid;
+    border-color: #ccc transparent;
+    border-width: .5em .5em 0 .5em;
+}
+
+.meddelare-container .meddelare-network .meddelare-icon {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-color: darkgrey;
+    background-image: url("meddelare-icons.png");
+    border-bottom: 2px solid #FFFFFF;
+    transition: 0.2s ease-out all;
+    opacity: 0.8;
+}
+
+.meddelare-container .meddelare-network .meddelare-icon:hover {
+    border-bottom-color: #343437;
+    transition: 0.15s ease-in all;
+    opacity: 1;
+}
+
+.meddelare-container .meddelare-network[data-meddelare-network=facebook] .meddelare-icon {
+    background-position: 70% 0;
+}
+
+.meddelare-container .meddelare-network[data-meddelare-network=twitter] .meddelare-icon {
+    background-position: 50% 0;
+}
+
+.meddelare-container .meddelare-network[data-meddelare-network=googleplus] .meddelare-icon {
+    background-position: 20% 0;
+}
