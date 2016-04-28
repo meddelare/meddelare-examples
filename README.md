@@ -46,4 +46,4 @@ Many thanks goes out to [Taskforce](https://taskforce.is/) for their [social-but
 
 Copyright (c) 2015 Team Meddelare <https://meddelare.com/> All rights reserved.
 
-When using [meddelare-examples](https://github.com/meddelare/meddelare-examples), comply to the [MIT license](http://opensource.org/licenses/MIT).
+When using [meddelare-examples](https://github.com/meddelare/meddelare-examples), comply to the [MIT license](https://opensource.org/licenses/MIT).
